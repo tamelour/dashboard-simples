@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontMain);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 25vw;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--shadow);
+}
+
+.container>.user{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container>.user>.image{
+    display: flex;
+    margin: 20px;
+}
+
+.container>.user>.image>.user-name{
+    margin-left: 10px;
+}
+
+
+.container>.user>.logout{
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container>.user>.logout> button{
+    background-color: var(--blackMain);
+    border: none;
+    width: 30%;
+    cursor: pointer;
+    height: 30px;
+    color: white;
+    border-radius: 5px; 
+    transition: background .4s;
+}
+.container>.user>.logout> button:hover{
+    border: 1px solid var(--blackMain);
+    color: var(--blackMain);
+    background-color: transparent;
+    font-weight: bolder;
+}
+
+.container>.search{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container>.search>.input{
+    width: calc(100% - 40px);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--border);
+}
+
+.container>.search>.input> input{
+    width: 100%;
+    height: 30px;
+    outline: 0;
+    border: none;
+}
+
+.container>.search>.input>.btn-search{
+    height: 100%;
+    width: 20%;
+}
+
+
+.container>.search>.input>.btn-search> button{
+    height: 100%;
+    width: 100%;
+    background-color: var(--blackMain);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+.container>.search>.input>.btn-search> button:hover{
+    background-color: black;
+}
+
+.container>.all-users{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.container>.all-users::-webkit-scrollbar{
+    width: 3px;
+}
+
+.container>.all-users::-webkit-scrollbar-thumb{
+    background-color: #a5a5a5;
+}
+
+.container>.all-users>.container-user{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: var(--blackMain);
+}
+
+.container>.all-users>.container-user:hover{
+    background-color: #a5a5a515;
+}
+
+.container>.all-users>.container-user>.photo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: 20px;
+}
+
+.container>.all-users>.container-user>.photo>.name-user{
+    margin-left: 10px;
+}
+
+.container>.all-users>.container-user>.on{
+    margin-right: calc(20px - 3px);
+    background-color: var(--on);
+    width: 11px;
+    height: 9px;
+    border-radius: 50%;
+}

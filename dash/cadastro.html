@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/626076f841.js" crossorigin="anonymous"></script>
+    
+    <!-- links css -->
+    <link rel="stylesheet" href="css/stylecadastro.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/photo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <title>Registro</title>
+</head>
+<body>
+
+    <div class="containerMain">
+        <div class="scroll">
+            <div class="register-container">
+                <div class="title">
+                    <h3>Registro para chat</h3>
+                    <hr>
+                </div>
+                
+
+                <div class="card-container">
+                    <div class="hideErro">
+                        <div class="error">
+                            <span id="erro" >erro</span>
+                        </div>
+                    </div>
+                    <div class="name">
+                        <div class="input-name">
+                            <label for="nameText"><p>Nome</p></label>
+                            <input id="nameText" type="text">
+                        </div>
+
+                        <div class="input-lastName">
+                            <label for="lastName"><p>Sobrenome</p></label>
+                            <input id="lastName" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="register">
+                        <div class="email">
+                            <label for="inputEmail"><p>Email</p></label>
+                            <div class="iconInput">
+                                <input id="inputEmail" type="text">
+                                <div class="iconEmail">
+                                    <label for="inputEmail"><i class="far fa-envelope"></i></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="password">
+                            <label for="inputPassword"><p>Senha</p></label>
+                            <div class="iconInput">
+                                <input id="inputPassword" type="password">
+                                <div class="iconPass">
+                                    <i class="dropHide far fa-eye"></i>
+                                    <i onclick="showPass();" class="dropShow far fa-eye-slash"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <div class="btnRegister">
+                            <button id="btnRegister">Registrar</button>
+                        </div>
+                        <div class="btnLogar">
+                            <a href="login.html">Já tenho uma conta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- photos profile -->
+
+            <section class="containerPhoto">
+                <section class="header">
+                    <div class="arrow">
+                        <img src="src/arrow-left.png" alt="N">
+                    </div>
+                    
+                </section>
+                
+                <div class="containerCard">
+                    <hr>
+
+                    <div class="hideErro">
+                        <div class="error">
+                            <span id="erro" >erro</span>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <div class="showPhoto">
+                            <label id="file" for="inputFile">
+                                <img src="src/perfil.png" alt="">
+                            </label>
+                            <input id="inputFile" type="file" style="display: none;">
+                    
+                            <div class="nick">
+                                <input type="text" placeholder="  Apelido">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <div class="button">
+                            <div class="btnRegister">
+                                <button id="btnRegister" onclick="finish();">Concluir</button>
+                            </div>
+                            <div class="btnJump">
+                                <button id="btnJump" onclick="finish();">Pular</button>
+                            </div>
+                        </div>
+                        <div class="btnLogar">
+                            <a href="login.html">Já tenho uma conta</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <!-- code javascript -->
+
+    <script src="js/valid.js"></script>
+</body>
+</html>

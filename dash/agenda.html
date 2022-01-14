@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda | Dash</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/agenda.css">
+    <link rel="stylesheet" href="css/align-cont.css">
+    <link rel="stylesheet" href="css/spam-agenda.css">
+    <link rel="stylesheet" href="css/spam-table-agenda.css">
+
+
+</head>
+
+
+<body>
+    <div class="cont">
+        <div class="cont-menu">
+            <section class="icons">
+                <ul class="drop-menu">
+                    <div class="btn">
+                        <button class="btn-open">
+                            <div>
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </div>
+                        </button>
+                        <button class="btn-close">
+                            <i class="fal fa-times fa-1x"></i>
+                        </button>
+                    </div>
+                    <li>
+                        <a href="#">
+                            <img src="src/avatar.png" alt="" height="40px" width="40px">
+                            <span>Eduardo Josiel</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="anota.html">
+                            <i class="fas fa-font fa-2x"></i>
+                            <span>Anotações</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dash.html">
+                            <i class="far fa-chart-line fa-2x"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <i class="fas fa-users fa-2x"></i>
+                            <span>Usuários</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fad fa-comments-alt fa-2x"></i>
+                            <span>Chat Online</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fal fa-plus fa-2x"></i>
+                            <span>Adicionar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="agenda.html">
+                            <i class="fal fa-tasks fa-2x"></i>                           
+                            <span>Tarefas</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="logout">
+                    <li>
+                        <a href="login.html">
+                            <i class="far fa-sign-out fa-2x"></i>                                                      
+                            <span>Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="container-ag">
+
+            <div class="cont-task">
+                <div class="title">
+                    <div>
+                        <h1>Tarefas</h1>
+                        <button onclick="openSpam();">
+                            <i class="fal fa-plus fa-2x"></i>
+                        </button>
+                    </div>
+                    
+                    <hr>
+                </div>
+                <div class="task">
+                    <div class="task-card">
+                        <div>
+                            <h3>Titulo</h3>
+                            <span>lorem ipsum idolor</span>
+                            <span>20:30</span>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div>
+                            <h3>Titulo</h3>
+                            <span>lorem ipsum idolor</span>
+                            <span>20:30</span>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div>
+                            <h3>Titulo</h3>
+                            <span>lorem ipsum idolor</span>
+                            <span>20:30</span>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div>
+                            <h3>Titulo</h3>
+                            <span>lorem ipsum idolor</span>
+                            <span>20:30</span>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div>
+                            <h3>Titulo</h3>
+                            <span>lorem ipsum idolor</span>
+                            <span>20:30</span>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div>
+                            <h3>Titulo</h3>
+                            <span>lorem ipsum idolor</span>
+                            <span>20:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="table-bar">
+                <table  class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">hora</th>
+                            <th scope="col">Segunda-feira</th>
+                            <th scope="col">Terça-feira</th>
+                            <th scope="col">Quarta-feira</th>
+                            <th scope="col">Quinta-feira</th>
+                            <th scope="col">Sexta-feira</th>
+                            <th scope="col">Sábado</th>
+                            <th scope="col">Domingo</th>                        
+                        </tr>
+                    </thead>
+                    <tbody background="#f5f5f5">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td align="center">Mark</td>
+                            <td align="center">Otto</td>
+                            <td align="center">@mdo</td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td align="center">Jacob</td>
+                            <td align="center">Thornton</td>
+                            <td align="center">@fat</td>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td align="center">Larry</td>
+                            <td align="center">Sla</td>
+                            <td align="center">@twitter</td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td align="center">Larry</td>
+                            <td align="center">Sla</td>
+                            <td align="center">@twitter</td>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td align="center">Larry</td>
+                            <td align="center">Sla</td>
+                            <td align="center">@twitter</td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td align="center">Larry</td>
+                            <td align="center">Sla</td>
+                            <td align="center">@twitter</td>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td align="center">Larry</td>
+                            <td align="center">Sla</td>
+                            <td align="center">@twitter</td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td><td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                            <td align="center">
+                                <div>
+                                    <p>Postar face</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td align="center">Larry</td>
+                            <td align="center">Sla</td>
+                            <td align="center">@twitter</td>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td align="center">Larry</td>
+                            <td align="center">Sla</td>
+                            <td align="center">@twitter</td>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+            </div>
+            <div class="add-table">
+                <button onclick="openSpamTable();">
+                    <i class="fal fa-plus fa-2x"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="spam">
+        <div class="drop-spam">
+            <form class="prod-container">
+                <div class="title">
+                    <h3>Adicionar uma tarefa</h3>
+                    <hr>
+                </div>
+                
+                <div class="card-container">
+                    <div class="hideErro">
+                        <div class="error">
+                            <span id="erro">erro</span>
+                        </div>
+                    </div>
+
+                    <div class="valor-prod">
+                        <div class="input-value">
+                            <label for="value-label"><p>Titulo</p></label>
+                            <div class="cont-value">
+                                <input id="value-label" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prod-inputs">
+                        <div class="produto">
+                            <label for="input-prod"><p>Tarefas</p></label>
+                            <textarea id="input-prod"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <div class="btnRegister">
+                            <button id="btnEnd">Concluir</button>
+                        </div>
+                        <div class="cancel">
+                            <button onclick="closeSpam();" id="btn-cancel">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="spam-table">
+        <div class="drop-spam">
+            <form class="prod-container">
+                <div class="title">
+                    <h3>Adicionar uma atividade</h3>
+                    <hr>
+                </div>
+                
+                <div class="card-container">
+                    <div class="hideErro">
+                        <div class="error">
+                            <span id="erro">erro</span>
+                        </div>
+                    </div>
+
+                    <div class="valor-prod">
+                        <div class="input-value">
+                            <label for="value-label"><p>Atividade</p></label>
+                            <div class="cont-value">
+                                <input id="value-label" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prod-inputs">
+                        <div class="produto">
+                            <label for="input-prod"><p>dia</p></label>
+                            <select id="day">
+                                <option value="Dia" disabled>selecione um dia</option>
+                                <option value="Segunda-feira">Segunda-feira</option>
+                                <option value="Terça-feira">Terça-feira</option>
+                                <option value="Quarta-feira">Quarta-feira</option>
+                                <option value="Quinta-feira">Quinta-feira</option>
+                                <option value="Sexta-feira">Sexta-feira</option>
+                                <option value="Sábado">Sábado</option>
+                                <option value="Domingo">Domingo</option>
+                            </select>
+                        </div>
+
+                        <div class="hora">
+                            <span>
+                                <label for="input-prod"><p>Horário</p></label>
+                            </span>
+                            <input type="time" id="input-prod">
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <div class="btnRegister">
+                            <button id="btnEnd">Concluir</button>
+                        </div>
+                        <div class="cancel">
+                            <button onclick="closeSpamTable();" id="btn-cancel">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/anime.js"></script>
+
+    <script>
+        const spam = document.querySelector('.spam');
+        const spamTable = document.querySelector('.spam-table');
+        const endBtn = document.getElementById('btnEnd');
+
+        function openSpam (){
+            spam.classList.add('active');
+        }
+
+        function closeSpam (){
+            spam.classList.remove('active');
+        }
+        function openSpamTable(){
+            spamTable.classList.add('active');
+        }
+        function closeSpamTable (){
+            spamTable.classList.remove('active');
+        }
+
+    </script>
+    
+</body>
+</html>

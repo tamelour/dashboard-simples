@@ -1,0 +1,16 @@
+:root{
+    --background: rgba(238, 238, 238, 0.746);
+    --white: #fff;
+    --error: #E28F8F;
+    --border: rgb(53, 53, 53);
+    --blackMain: #202020;
+    --background-spam: #202020ad;
+    --backGray: #f6f6f6;
+    --subHover: #ebe8e8d5;
+    --shadow: #262424ad;
+    --on: rgb(14, 170, 110);
+    /* font title */
+
+    --fontTitle: "Montserrat";
+    --fontMain: "Rubik";
+}

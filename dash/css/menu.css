@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cont{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    font-family: var(--fontMain);
+    z-index: -1000;
+}
+
+i{
+    color: white;
+    width: 40px;
+}
+
+.cont>.cont-menu{
+    height: 100vh;
+    width: 400px;
+    background-color: var(--blackMain);
+    position: absolute;
+    z-index: -1;
+}
+
+.cont>.cont-menu>.icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont>.cont-menu>.icons>.drop-menu{
+    list-style: none;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont>.cont-menu>.icons>.drop-menu>.btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cont>.cont-menu>.icons>.drop-menu>.btn>.btn-close{
+    margin-right: 50px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont>.cont-menu>.icons>.drop-menu>.btn>.btn-open{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.cont>.cont-menu>.icons>.drop-menu>.btn>.btn-open>div{
+    width: 55%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.cont>.cont-menu>.icons>.drop-menu>.btn>.btn-open> div>.top{
+    background-color: var(--white);
+    width: 100%;
+    height: 2px;
+}
+.cont>.cont-menu>.icons>.drop-menu>.btn>.btn-open>div>.middle{
+    background-color: var(--white);
+    width: 75%;
+    height: 2px;
+}
+
+.cont>.cont-menu>.icons>.drop-menu>.btn>.btn-open>div>.bottom{
+    background-color: var(--white);
+    width: 50%;
+    height: 2px;
+}
+
+
+.cont>.cont-menu>.icons>.drop-menu>.btn> button:hover{
+    background-color: #262424;
+}
+
+.cont>.cont-menu>.icons>.drop-menu>li{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 20px; */
+    width: 100%;
+}
+
+.cont>.cont-menu>.icons>.drop-menu>li> a{
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px;
+    transition: background .4s;
+
+}
+
+.cont>.cont-menu>.icons>.drop-menu>li> a> img{
+    margin-left: 20px;
+}
+
+.cont>.cont-menu>.icons>.drop-menu>li> a> i{
+    margin-left: 25px;
+}
+.cont>.cont-menu>.icons>.drop-menu>li >a:hover{
+    background-color: #262424;
+}
+
+
+.cont>.cont-menu>.icons>.drop-menu>li> a> span{
+    margin-left: 50px;
+
+}
+
+/* logout  */
+
+.cont>.cont-menu>.icons>.logout{
+    list-style: none;
+}
+
+.cont>.cont-menu>.icons>.logout>li{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 20px; */
+    width: 100%;
+}
+
+.cont>.cont-menu>.icons>.logout>li> a{
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.cont>.cont-menu>.icons>.logout>li> a> i{
+    margin-left: 25px;
+    transform: rotate(180deg);
+}
+.cont>.cont-menu>.icons>.logout>li >a:hover{
+    background-color: #262424;
+}
+
+
+.cont>.cont-menu>.icons>.logout>li> a> span{
+    margin-left: 50px;
+}

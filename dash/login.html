@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/626076f841.js" crossorigin="anonymous"></script>
+    
+    <!-- links css -->
+    <link rel="stylesheet" href="css/stylecadastro.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>login</title>
+</head>
+<body>
+    <div class="register-container">
+        <div class="title">
+            <h3>Entrar no chat</h3>
+            <hr>
+        </div>
+        
+        <div class="card-container">
+            <div class="hideErro">
+                <div class="error">
+                    <span id="erro">erro</span>
+                </div>
+            </div>
+            
+            <div class="register">
+                <div class="email">
+                    <label for="inputEmail"><p>Email</p></label>
+                    <div class="iconInput">
+                        <input id="inputEmail" type="text">
+                        <div class="iconEmail">
+                            <label for="inputEmail"><i class="far fa-envelope"></i></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="password">
+                    <label for="inputPassword"><p>Senha</p></label>
+                    <div class="iconInput">
+                        <input id="inputPassword" type="text">
+                        <div class="iconPass">
+                            <i class="dropHide far fa-eye"></i>
+                            <i onclick="showPass();" class="dropShow far fa-eye-slash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <div class="btnRegister">
+                    <button id="btnEntrar">Entrar</button>
+                </div>
+                <div class="btnLogar">
+                   <p>Não tem uma conta?</p> <a href="cadastro.html"> crie uma</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/loginValid.js"></script>
+</body>
+</html>

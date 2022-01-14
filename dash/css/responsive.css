@@ -1,0 +1,151 @@
+@media  only screen and (max-width: 1200px){
+    body{
+        width: auto;
+        height: 100vh;
+    }
+    .myChat{
+        width: 80vw;
+        height: 90vh;
+
+    }
+}
+
+@media  only screen and (max-width: 840px){
+    html{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .myChat{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+    }
+}
+
+/* tela de login */
+
+@media  only screen and (max-width: 1200px){
+    body{
+        width: auto;
+        height: 100vh;
+    }
+    .register-container{
+        width: 80vw;
+        height: 90vh;
+
+    }
+}
+
+@media  only screen and (max-width: 840px){
+    html{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .register-container{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    p, span, button,a{
+        font-size: .8em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+}
+
+/* cadastro */
+
+@media  only screen and (max-width: 1200px){
+    html{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .containerMain{
+        width: 80vw;
+        height: 90vh;
+    }
+
+    .containerMain>.activeScroll{
+        margin-left: -80vw;
+    }
+
+    .containerMain>.scroll>.containerPhoto{
+        width: 80vw;
+        height: 90vh;
+    }
+
+    .containerMain>.scroll>.containerPhoto>.conteinerCard{
+        width: 90%;
+    }
+
+    #file{
+        width: 12vw;
+        height: 12vw;
+    }
+    p, span, button,a{
+        font-size: 1.1em;
+    }
+
+
+    h3{
+        font-size: 2em;
+    }
+}
+
+@media  only screen and (max-width: 840px){
+    html{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .containerMain{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .containerMain>.activeScroll{
+        margin-left: -100vw;
+    }
+
+    .containerMain>.scroll>.containerPhoto{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #file{
+        width: 24vw;
+        height: 24vw;
+    }
+    p, span, button,a{
+        font-size: .8em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+}

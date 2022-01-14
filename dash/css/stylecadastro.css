@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* div{
+    border: 1px solid blue
+} */
+
+input{
+    border-radius: 2px;
+}
+
+p,a,span, button{
+    font-family: 'Montserrat';
+    font-size: 1vw;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background) ;
+}
+
+.register-container{
+    width: 25vw;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: visibility .4s;
+}
+.visibleHide{
+    visibility: hidden;
+}
+.register-container>.title{
+    width: 80%;
+}
+
+.register-container>.title>h3{
+    font-family: 'Rubik', Montserrat;
+    font-size: 2vh;
+    margin-bottom:10px ;
+}
+
+.register-container>.title>hr{
+    margin-bottom: 10px;
+}
+
+.register-container>.card-container{
+    height: auto;
+    width: 80%;
+}
+.register-container>.card-container>.hideErro{
+    display: none;
+    transition: all .4s;
+}
+
+.register-container>.card-container>.showErro{
+    display: block;
+}
+
+/* .register-container>.card-container>.active{
+    transition: all .4s;
+    animation: alert alternate 1s;
+}
+
+@keyframes alert {
+    0%{
+        transform: translateX(15px);
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
+
+.register-container>.card-container>.hideErro>.error{
+    width: 100%;
+    height: 40px;
+    background-color: var(--error);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* input name */
+
+.register-container>.card-container>.name{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.register-container>.card-container>.name>.input-name,
+.register-container>.card-container>.name>.input-lastName{
+    width: 100%;
+}
+
+.register-container>.card-container>.name>.input-lastName{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+
+.register-container>.card-container>.name>.input-lastName> label{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.register-container>.card-container>.name>.input-name> input,
+.register-container>.card-container>.name>.input-lastName> input
+{
+    width: 90%;
+    outline: 0;
+    height: 30px;
+    border: 1px solid var(--border);
+}
+
+/* email input */
+
+.register-container>.card-container>.register{
+    margin-top: 15px;
+}
+
+.register-container>.card-container>.register>.email>.iconInput{
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    border-radius:2px ;
+}
+
+.register-container>.card-container>.register>.email>.iconInput> input{
+    width: 89%;
+    border: none;
+    outline: 0;  
+    height: 100%;
+}
+
+.register-container>.card-container>.register>.email>.iconInput>.iconEmail{
+    width: 15%;
+    height: 100%;
+}
+
+.register-container>.card-container>.register>.email>.iconInput>.iconEmail> label{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* password input */
+
+.register-container>.card-container>.register>.password{
+    margin-top: 15px;
+}
+
+.register-container>.card-container>.register>.password>.iconInput{
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content:space-between;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.register-container>.card-container>.register>.password>.iconInput> input{
+    width: 89%;
+    border: none;
+    outline: 0;  
+}
+
+
+
+/* icons password */
+
+.register-container>.card-container>.register>.password>.iconInput>.iconPass{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container>.card-container>.register>.password>.iconInput>.iconPass>.dropHide{
+    position: absolute;
+    visibility: hidden;
+}
+
+.register-container>.card-container>.register>.password>.iconInput>.iconPass>.dropShow{
+    position: absolute;
+    visibility: visible;
+    cursor: pointer;
+}
+
+/* btn register */
+
+.register-container>.card-container>.btn{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.register-container>.card-container>.btn>.btnRegister{
+    width: 100%;
+}
+
+.register-container>.card-container>.btn>.btnRegister> button{
+    width: 100%;
+    height: 30px;
+    background-color: var(--blackMain);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.register-container>.card-container>.btn>.btnLogar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.register-container>.card-container>.btn>.btnLogar>a{
+    color: var(--blackMain);
+}

@@ -1,0 +1,157 @@
+.containerMain{
+    display: flex;
+    width: 25vw;
+    align-items: center;
+    overflow: hidden;
+}
+
+.containerMain>.scroll{
+    display: flex;
+    transition: margin .5s;
+}
+.containerMain>.activeScroll{
+    margin-left: -25vw;
+}
+.containerPhoto{
+    width: 25vw;
+    height: auto;
+    padding-bottom: 30px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.containerPhoto>.header{
+    background-color: blueviolet;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.containerPhoto>.header>.arrow{
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 50%;
+    transition: background .3s;
+}
+
+.containerPhoto>.header>.arrow:hover{
+    background-color: var(--backGray);
+    cursor: pointer;
+}
+
+.containerPhoto>.containerCard{
+    width: 80%;
+}
+
+.containerPhoto>.containerCard>.hideErro>.error{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: var(--error);
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.containerPhoto>.containerCard>.center{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerPhoto>.containerCard>.center>.showPhoto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerPhoto>.containerCard>.center>.showPhoto> label{
+    border-radius: 50%;
+    width: 6vw;
+    height: 6vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.containerPhoto>.containerCard>.center>.showPhoto> label img{
+    width: 110%;
+    height: 110%;
+}
+
+.containerPhoto>.containerCard>.center>.showPhoto>.nick{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.containerPhoto>.containerCard>.center>.showPhoto>.nick> input{
+    height: 20px;
+    width: 100%;
+    border: 1px solid var(--border);
+    outline: 0;
+}
+
+.containerPhoto>.containerCard>.btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px ;
+}
+
+.containerPhoto>.containerCard>.btn>.button{
+    display: flex;
+    width: 100%;
+}
+
+.containerPhoto>.containerCard>.btn>.button>.btnRegister,
+.containerPhoto>.containerCard>.btn>.button>.btnJump{
+    width: 100%;
+}
+
+.containerPhoto>.containerCard>.btn>.button>.btnRegister> button{
+    width: 90%;
+    height: 30px;
+    background-color: var(--blackMain);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+.containerPhoto>.containerCard>.btn>.button>.btnJump{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerPhoto>.containerCard>.btn>.button>.btnJump> button{
+    width: 90%;
+    height: 30px;
+    background-color: var(--blackMain);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.containerPhoto>.containerCard>.btn>.btnLogar{
+    margin-top: 20px;
+}
+
+.containerPhoto>.containerCard>.btn>.btnLogar> a{
+    color: var(--blackMain);
+}

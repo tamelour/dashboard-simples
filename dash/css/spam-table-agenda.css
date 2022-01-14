@@ -1,0 +1,183 @@
+.spam-table{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-spam);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.spam-table>.drop-spam{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    position: absolute;
+    border-radius: 10px;
+    border-radius: 5px;
+}
+.spam-table>.drop-spam>.prod-container{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: visibility .4s;
+    border-radius: 5px;
+}
+
+.spam-table>.drop-spam>.prod-container>.title{
+    width: 80%;
+}
+
+.spam-table>.drop-spam>.prod-container>.title>h3{
+    font-family: 'Rubik', Montserrat;
+    font-size: 2vh;
+    margin-bottom:10px ;
+}
+
+.spam-table>.drop-spam>.prod-container>.title>hr{
+    margin-bottom: 10px;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container{
+    height: auto;
+    width: 80%;
+}
+.spam-table>.drop-spam>.prod-container>.card-container>.hideErro{
+    /* visibility: hidden; */
+    transition: all .4s;
+    margin-bottom: 50px;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.showErro{
+    visibility: visible;
+}
+
+
+.spam-table>.drop-spam>.prod-container>.card-container>.hideErro>.error{
+    width: 100%;
+    height: 40px;
+    background-color: var(--error);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* input name */
+
+.spam-table>.drop-spam>.prod-container>.card-container>.prod-inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.prod-inputs>.produto{
+    width: 100%;
+    
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.prod-inputs>.hora{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.prod-inputs>.hora> span{
+    width: 90%;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.prod-inputs>.produto>select{
+    width: 90%;
+    height: 30px;
+    outline: 0;
+    height: 30px;
+    border: 1px solid var(--border);
+    font-weight: bold;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.prod-inputs>.produto>select>option{
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+.spam-table>.drop-spam>.prod-container>.card-container>.prod-inputs>.hora>input
+{
+    width: 90%;
+    height: 30px;
+    outline: 0;
+    height: 30px;
+    border: 1px solid var(--border);
+}
+
+/* email input */
+
+.spam-table>.drop-spam>.prod-container>.card-container>.valor-prod{
+    margin-top: 15px;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.valor-prod>.input-value>.cont-value{
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    border-radius:2px ;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.valor-prod>.input-value>.cont-value> input{
+    width: 100%;
+    border: none;
+    outline: 0;  
+    height: 100%;
+}
+
+/* btn rigth */
+
+.spam-table>.drop-spam>.prod-container>.card-container>.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.btn>.btnRegister,
+.spam-table>.drop-spam>.prod-container>.card-container>.btn>.cancel{
+    width: 40%;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.btn>.btnRegister> button,
+.spam-table>.drop-spam>.prod-container>.card-container>.btn>.cancel>button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--blackMain);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.spam-table>.drop-spam>.prod-container>.card-container>.btn>.cancel>button{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    color: var(--blackMain);
+    border: 1px solid var(--blackMain);
+    cursor: pointer;
+    font-weight: bold;
+}
